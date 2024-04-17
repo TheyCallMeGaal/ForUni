@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ::-webkit-scrollbar{
+            width: 15px;
+        }
+        ::-webkit-scrollbar-track{
+            background: red;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: rgb(119, 5, 5);
+        }
+
+        *{
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html{
+            scroll-behavior:smooth !important;
+        }
+        body{
+            
+            background-color:  rgb(64, 3, 3);
+            background-repeat: repeat-y;
+        }
+        
+        .header{
+            background-color: transparent;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        
+        .pro{
+            font-family: 'Manrope', sans-serif;
+            font-size: 21px;
+            padding: 8px;
+            text-decoration: none;
+            color: rgb(252, 255, 72);
+        }
+        
+        .ab{
+            font-family: 'Manrope', sans-serif;
+            font-size: 21px;
+            padding: 8px;
+            text-decoration: none;
+            color: rgb(252, 255, 72);;
+        
+        }
+        
+        .home{
+            font-family: 'Manrope', sans-serif;
+            font-size: 21px;
+            padding: 8px;
+            text-decoration: none;
+            color: rgb(252, 255, 72);;
+        
+        }
+        .con{
+        
+            font-family: 'Manrope', sans-serif;
+            font-size: 21px;
+            padding: 8px;
+            text-decoration: none;
+            color: rgb(252, 255, 72);;
+            border: 3px;
+            border-style: solid;
+            border-color: rgb(252, 255, 72);
+            border-radius: 0px;
+        }
+        
+        .name{
+            font-size: 35px;
+            color: rgb(255, 152, 152);
+            text-decoration: none;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:"wdith" 100;
+
+        }
+        
+        .back{
+            max-width: 100%;
+            max-height: 1200px;
+            overflow: hidden;
+        }
+        
+        
+        section{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 100px;
+            color: rgb(252, 255, 72);
+        }
+        .content{
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            flex-direction: column;
+        }
+        .main-title{
+            font-family: 'Varela Round', sans-serif;
+            font-size: 4em;
+            margin-bottom: 50px;
+        }
+        
+        .container{
+            position: relative;
+            width: 1150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container .image{
+            position: relative;
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+        }
+        .container .image img{
+            position: absolute;
+            z-index: 111;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .container .textbox{
+            font-family: 'Varela Round', sans-serif;
+            z-index: 222;
+            background-color: rgba(255, 255, 255,0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 7px;
+            padding: 40px;
+            max-width: 400px;
+            transform: translate(-80px,50px);
+        }
+        
+        .container .textbox h2{
+            font-family: 'Varela Round', sans-serif;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .sec-02{
+            margin-top: 350px;
+        }
+        
+        .icons{
+            font-family: 'Nunito', sans-serif;
+            width: 400px;
+            margin-left: 50px;
+        }
+        
+        .icons li{
+            font-family: 'Nunito', sans-serif;
+            list-style: none;
+            font-size: 1.4em;
+        }
+        
+        .icons li a{
+            color: rgb(252, 255, 72);
+            text-decoration: none;
+        
+        }
+        
+        .icons li:not(:last-child){
+            margin-bottom: 50px;
+        }
+        
+        .icons li:nth-child(1), .icons li:nth-child(3){
+            padding-left: 100px;
+        }
+        
+        .icons li:nth-child(2), .icons li:nth-child(2){
+            padding-left: 50px;
+        }
+        
+        .contacts{
+            margin-bottom: 250px;
+            margin-top: 100px;
+        }
+        .wiki{
+            text-decoration: none;
+            color: rgb(252, 255, 72);
+        }
+        :hover.wiki{
+            text-decoration: underline;
+        }
+        
+        </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--dziritadi-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="cssia.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giorgi's Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+
+    <!--for Name tag-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Lato:wght@700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!--textistvis da suratebistvis-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    <header class="header">
+        <a href="" class="name">Giorgi</a>
+    
+    <nav class="navbar">
+        <a href="#home" class="home">Home</a>
+        <a href="#about" class="ab">About us</a>
+        <a href="#contacts" class="con">Contacts</a>
+    </nav>
+</header>
+<section class="sec-1">
+<div class="content"><h1 class="main-title" id="home">გამარჯობა</h1>
+    <div class="container">
+<div class="image"><img src="pics/car1.png" alt="kata"></div>
+<div class="textbox">
+    <h2>მე ვარ გიორგი</h2>
+    <p>
+        ეს არის ჩემი პირველი ვებსაიტი,სადაც პატარა მიმოხილვას გავაკეთებ ჩემს შესახებ.
+    </p>
+</div>
+</div>
+</div>
+</section>
+<section class="sec-2">
+    <div class="content" id="about">
+    <h1 class="main-title" >დავიწყოთ!</h3>
+    <div class="container">
+        <div class="image"><img src="pics/abt.jfif" alt="foto linuxidan"></div>
+        <div class="textbox">
+            <h2>ჩემს შესახებ</h2>
+            <p>მე მქვია გიორგი. ვარ 19 წლის ვცხოვრობ <a class="wiki" href="https://ka.wikipedia.org/wiki/თბილისი">თბილსში</a>. გამოცდილება არ მაქვს ამ სფეროსთან მაგრამ ვთვლი რომ საკმაოდ საინტერესოა. ამიტომაც ჩემი პირველი საიტი შევქმენი.
+            </p>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="contacts">
+    <div class="content">
+        <h1 class="main-title">The way to contact us</h1>
+        <div class="container">
+            <div class="icons" id="contacts">
+                <li><a href=""><i class="fab fa-facebook">Facebook</i></a></li>
+                <li><a href=""><i class="fab fa-instagram">Instagram</i></a></li>
+                <li><a href=""><i class="fab fa-twitter">twitter</i></a></li>
+            </div>
+            <div class="image">
+                <img src="pics/mail.gif" alt="mailis gifi"> <!--GIF-->
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    ScrollReveal({ 
+        reset: true, 
+        distance: '60px',
+        duration: 2500,
+        delay: 400,
+    });
+
+    ScrollReveal().reveal('.main-title', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.image', { delay: 600, origin: 'bottom' });
+    ScrollReveal().reveal('.textbox', { delay: 700, origin: 'right' });
+    ScrollReveal().reveal('.main-title', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.icons i', { delay: 500, origin: 'left',interval: 200});
+</script>
+</body>
+</html>
